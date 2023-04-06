@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Search.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1 class="title">
+                    Form đăng ký và tìm kiếm thông tin sinh viên.
+                </h1>
+
+                <div class="body">
+                    <div class="search">
+                        <h2>Tìm kiếm</h2>
+                        <input class="student-search" type="text" placeholder="Tìm kiếm...">
+                    </div>
+
+                    <div class="add">
+                        <h2>Thêm sinh viên</h2>
+                        <form class="add-item">
+                            <span class="add-title">Tên sinh viên:</span>
+                            <input class="student-name" type="text" placeholder="Nhập tên sinh viên...">
+                        </form>
+
+                        <form class="add-item">
+                            <span class="add-title mg-t-b-20 ">Mã sinh viên:</span>
+                            <input class="student-code" type="text" placeholder="Nhập mã sinh viên...">
+                        </form>
+
+                        <form class="add-item">
+                            <span class="add-title ">Quê quán:</span>
+                            <input class="student-address" type="text" placeholder="Quê quán...">
+                        </form>
+                        <btn class="btn-add" href="">Thêm</btn>
+                    </div>
+                </div>
+
+                <div class="show">
+                    <h2>Danh sách sinh viên</h2>
+
+                    <table class="show-table" border="1" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Tên sinh viên</th>
+                                <th>Mã sinh viên</th>
+                                <th>Quê quán</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="list-student">
+                            <tr class="list-item">
+                                <td>Nguyễn Việt Dũng</td>
+                                <td>CD200084</td>
+                                <td>Thái Bình</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script src="../../jquery.min.js"></script>
+<script src="Search.js"></script>
+
+</html>
